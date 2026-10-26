@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  --color-maroon: #4B1428;
+  --color-ivory: #F5F0E8;
+  --color-charcoal: #242124;
+
+  /* Default Dark Mode */
+  --bg-primary: #160F13;
+  --bg-secondary: #22151B;
+  --bg-surface: #242124;
+  --bg-card: rgba(36, 33, 36, 0.75);
+  --bg-card-hover: rgba(45, 30, 38, 0.85);
+  --border-color: rgba(245, 240, 232, 0.12);
+  --border-highlight: rgba(75, 20, 40, 0.8);
+  --text-primary: #F5F0E8;
+  --text-secondary: rgba(245, 240, 232, 0.72);
+  --text-tertiary: rgba(245, 240, 232, 0.48);
+  --accent-maroon: #4B1428;
+  --accent-maroon-hover: #631C37;
+  --accent-surface: rgba(75, 20, 40, 0.28);
+  --input-bg: rgba(22, 15, 19, 0.85);
+}
+
+html.theme-light {
+  /* Refined Architectural Light Mode */
+  --bg-primary: #F5F0E8;
+  --bg-secondary: #ECE5DA;
+  --bg-surface: #FAF7F2;
+  --bg-card: rgba(255, 255, 255, 0.88);
+  --bg-card-hover: rgba(255, 255, 255, 0.98);
+  --border-color: rgba(75, 20, 40, 0.16);
+  --border-highlight: #4B1428;
+  --text-primary: #242124;
+  --text-secondary: rgba(36, 33, 36, 0.76);
+  --text-tertiary: rgba(36, 33, 36, 0.52);
+  --accent-maroon: #4B1428;
+  --accent-maroon-hover: #360E1D;
+  --accent-surface: rgba(75, 20, 40, 0.08);
+  --input-bg: rgba(255, 255, 255, 0.95);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.font-display {
+  font-family: 'Cinzel', 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-serif-luxury {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Subtle architectural blueprints and grid styling */
+.arch-grid-pattern {
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(245, 240, 232, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(245, 240, 232, 0.035) 1px, transparent 1px);
+}
+
+html.theme-light .arch-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(75, 20, 40, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(75, 20, 40, 0.05) 1px, transparent 1px);
+}
+
+/* Custom scrollbars matching architectural aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-maroon);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-maroon-hover);
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--accent-maroon);
+  outline-offset: 2px;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "UrbanNest Builders - Premium Building Design",
+  "description": "Architectural building design, residential planning, and construction consultation in Chennai, Tamil Nadu by UrbanNest Builders.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
